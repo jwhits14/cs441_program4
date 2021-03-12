@@ -9,38 +9,11 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_input"
         android:stretchColumns="0,1"
         android:id="@+id/table_layout">
-
-<!--        <TableRow>-->
-<!--            <TextView-->
-<!--                android:layout_column="0"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="row 0, col 0"/>-->
-<!--            <TextView-->
-<!--                android:layout_column="1"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="row 0, col 1"/>-->
-<!--        </TableRow>-->
-<!--        <TableRow>-->
-<!--            <TextView-->
-<!--                android:layout_column="0"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="row 1, col 0"/>-->
-<!--            <TextView-->
-<!--                android:layout_column="1"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="row 1, col 1"/>-->
-<!--        </TableRow>-->
-
     </TableLayout>
 
     <Button
@@ -48,26 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
-        android:layout_marginTop="1200px"
-        android:layout_marginRight="500px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_input"
+        app:layout_constraintTop_toTopOf="@+id/item_input"
+        android:layout_marginLeft="30px"
+        android:backgroundTint="@color/teal_200"
         android:onClick="addRow"/>
-
-    <Button
-        android:id="@+id/rem_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Remove"
-        android:layout_marginTop="1200px"
-        android:layout_marginLeft="500px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="removeRow"/>
 
     <EditText
         android:id="@+id/item_input"
@@ -79,7 +37,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginBottom="700px" />
-
+        android:layout_marginBottom="1500px" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
